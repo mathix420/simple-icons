@@ -1,0 +1,54 @@
+{
+  "name": "simple-icons",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt -H 0",
+    "start": "nuxt start",
+    "build": "nuxt generate",
+    "generate": "nuxt generate",
+    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
+    "lint:style": "stylelint \"**/*.{vue,css,scss,sass}\" --ignore-path .gitignore",
+    "lintfix:js": "npm run lint:js -- --fix",
+    "lintfix:style": "npm run lint:style -- --fix",
+    "lint": "npm run lint:js && npm run lint:style",
+    "lintfix": "npm run lintfix:js && npm run lintfix:style",
+    "postinstall": "husky install .linter/husky"
+  },
+  "dependencies": {
+    "@nuxtjs/pwa": "^3.3.5",
+    "core-js": "^3.15.1",
+    "nuxt": "^2.15.7",
+    "simple-icons": "^5.9.0"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.14.7",
+    "@nuxtjs/eslint-config": "^6.0.1",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/stylelint-module": "^4.0.0",
+    "@nuxtjs/svg-sprite": "^0.5.2",
+    "@nuxtjs/tailwindcss": "^4.2.0",
+    "eslint": "^7.29.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-vue": "^7.12.1",
+    "fibers": "^5.0.0",
+    "husky": "^7.0.1",
+    "node-sass": "^6.0.1",
+    "postcss": "^8.3.5",
+    "prettier": "^2.3.2",
+    "sass-loader": "^10.2.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-scss": "^3.20.1"
+  },
+  "browserslist": [
+    "defaults",
+    "last 2 versions",
+    "> 1%",
+    "not dead",
+    "not IE 11"
+  ]
+}
